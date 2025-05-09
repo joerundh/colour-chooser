@@ -1,0 +1,23 @@
+.componentSlider {
+    display: grid;
+    grid-template-columns: auto 300px 40px;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.componentSlider p {
+    text-align: left;
+    height: fit-content;
+    line-height: 0;
+}
+
+.componentSlider input[type='range'] {
+    cursor: pointer;
+}
+
+
+.componentSlider input[type='text'] {
+    box-sizing: border-box;
+    text-align: center;
+    height: 30px;
+}

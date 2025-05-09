@@ -1,0 +1,34 @@
+.tabManager {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.tabsBar {
+    background-color: #242424;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1px;
+}
+
+.tab {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #404040;
+}
+
+.inactive {
+    background-color: #303030;
+}

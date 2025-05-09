@@ -1,0 +1,39 @@
+.displayContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.colorDisplay {
+    width: 100%;
+    height: 300px;
+    border: 1px solid gray;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.displayElement {
+    --text-border-color: black;
+    --text-border-width: 1.3px;
+    --pos-w: var(--text-border-width);
+    --neg-w: calc(var(--text-border-width)*(-1));
+    --text-border: var(--pos-w) var(--pos-w) var(--text-border-color), var(--neg-w) var(--pos-w) var(--text-border-color), var(--pos-w) var(--neg-w) var(--text-border-color), var(--neg-w) var(--neg-w) var(--text-border-color);
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Consolas;
+    text-shadow: var(--text-border);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}

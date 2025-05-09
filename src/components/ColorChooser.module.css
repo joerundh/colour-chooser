@@ -1,0 +1,8 @@
+.colorChooser {
+    background-color: #404040;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}

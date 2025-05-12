@@ -7,7 +7,7 @@ export default function ComponentSlider({ label, value, min, max, setter }) {
         const newValue = (Number.isNaN(val) || val === "") ? min : Number.parseInt(val);
         if (newValue < min) {
             setter(min);
-            target.svalue = min;
+            target.value = min;
         } else if (newValue > max) {
             setter(max);
             target.value = max;
@@ -27,7 +27,7 @@ export default function ComponentSlider({ label, value, min, max, setter }) {
     return (
         <div className={styles.componentSlider}>
             <p>{label}:</p>
-            <input type="range" value={value} min={min} max={max} step={1} onChange={e => setter(e.target.value)} />
+            <input type="range" value={value} min={min} max={max} step={1} onChange={e => setValue(e.target)} />
             <input type="text" value={value} onChange={e => setValue(e.target)} onKeyDown={e => handleKeyPress(e)}/>
         </div>
     )

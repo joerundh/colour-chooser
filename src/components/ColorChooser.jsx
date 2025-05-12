@@ -24,12 +24,8 @@ export function ColorChooser() {
         localStorage.setItem("color-chooser-stored-rgb", JSON.stringify([ red, green, blue ]));
     }
 
-    let timeout;
     useEffect(() => {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => {
-            storeRGB();
-        }, 10);
+        storeRGB();
     }, [ red, blue, green ])
 
     return (
